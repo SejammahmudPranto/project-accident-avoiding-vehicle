@@ -49,7 +49,7 @@ int leftdistance() {     //left thing distance
   durationl=pulseIn(echopinl, HIGH);
   distancel=durationl*0.034/2;
   Serial.print("Distance left:");
-  Serial.println(distancel:);
+  Serial.println(distancel);
   return distancel;
 }
 
@@ -65,5 +65,7 @@ void setup() {
 
 void loop() {
   int lcd=leftdistance();
+  int bcd=backdistance();
+  int fcd=frontdistance();
   delay(1000);
 }
