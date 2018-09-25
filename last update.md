@@ -1,6 +1,6 @@
 int lmp=42; //left motorplus
 int lmm=43; //left motorminus
-int lmpwm=3;  //leftmotorpwm
+int lmpwm=4;  //leftmotorpwm
 int rmp=36; //rightmotorplus
 int rmm=37; //rightmotorminus
 int rmpwm=2;  //rightmotorpwm
@@ -143,7 +143,9 @@ void setup() {
 }
 
 void loop() {
-  if(Serial.available()>0) {
+  vehstop();
+  
+  /*if(Serial.available()>0) {
     state=Serial.read();
     flag=0;
   }
@@ -176,5 +178,5 @@ void loop() {
  
   //Serial.println("done!!");
   // put your main code here, to run repeatedly:
-
+*/
 }
